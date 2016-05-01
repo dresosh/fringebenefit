@@ -33,14 +33,14 @@ section.fringe-container {
       a {
         button {
           // border: none;
-          background: transparent;
+          background: linear-gradient(to bottom, #fcfcfc, #e6e6e6);
           position: relative;
           left: 50%;
           transform: translateX(-50%);
           font-style: italic;
           font-size: 16px;
           &:hover {
-            color: $hover;
+            // font-weight: bold;
           }
         }
 

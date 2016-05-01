@@ -18,7 +18,11 @@ section.fringe-container {
           .item {
             img {
               height: 420px;
+              object-fit: cover;
               margin: 0 auto;
+              @include iphone {
+                height: 280px;
+              };
             }
           }
         }

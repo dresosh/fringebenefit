@@ -55,7 +55,7 @@
       <div class="social">
         <?php the_excerpt(); ?>
       </div>
-      <a href="/fringe/blog"><button class="btn btn-default back-btn" type="button" name="button">Back</button></a>
+      <a href="/blog"><button class="btn btn-default back-btn" type="button" name="button">Back</button></a>
 
 
       </div>

@@ -98,8 +98,12 @@ nav.navbar {
       transform: translateX(-50%);
       img {
         height: 100%;
-        @include iphone {
+        @include mobile {
+          margin-top: 6px;
           height: 70%;
+        };
+        @include iphone {
+          margin-top: 4px;
         };
       }
     }

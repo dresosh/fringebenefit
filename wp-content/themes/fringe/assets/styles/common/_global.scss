@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+  // padding-top: $nav-height;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+// 30px padding for mobile
+.row {
+  @include mobile {
+    margin: 0 15px;
+  };
+}
+
+// Instagram icon-navbar
+.ig-icon {
+  position: absolute;
+  right: 1060px;
+  top: 10px;
+  opacity: 0;
+}
+
+// Instagram animation
+@keyframes ig-fade {
+  0% {
+    right: 1060px;
+    opacity: 0;
+  }
+  100% {
+    right: 60px;
+    opacity: 1;
+  }
+}
+
+
+.ig-fadeIn {
+  animation-name: ig-fade;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+
+// Navbar fadein
+@keyframes navfade {
+  from { background: transparent;}
+  to { background: $white;}
+}
+
+
+.navfade {
+  animation-name: navfade;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+.current {
+  font-weight: bold;
+}
+
+// Navbar
+nav.navbar {
+  // Link colors
+  .navbar-nav {
+    li {
+      a {
+        color: $black;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  font-family: 'Open Sans', sans-serif;
+  height: $nav-height;
+  @include iphone {
+    height: 50px;
+  };
+  border: none;
+  background: transparent;
+  .navbar-header {
+    a.navbar-brand {
+      position: absolute;;
+      left: 50%;
+      height: 100%;
+      padding: 18px 0;
+      @include iphone {
+        padding: 15px 0;
+      };
+      transform: translateX(-50%);
+      img {
+        height: 100%;
+        @include iphone {
+          height: 70%;
+        };
+      }
+    }
+  }
+  ul {
+    margin-top: 45px;
+    @include iphone {
+      margin-top: 0;
+    };
+    li {
+      text-transform: lowercase;
+      color: red;
+      a {
+        padding: 0 20px;
+        @include iphone {
+          padding: 15px;
+          background: #fff;
+        };
+      }
+    }
+  }
+}
+
+
+// Carousel arrows
+.glyphicon-menu-right {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  color: $black;
+}
+.glyphicon-menu-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $black;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+
+// Global font styles
+h1 {
+  font-size: 29px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $black;
+}
+
+
+// Page heading
+.heading {
+  text-decoration: underline;
+  font-size: 29px;
+}
+
+* {
+  // border: 1px solid red;
+}

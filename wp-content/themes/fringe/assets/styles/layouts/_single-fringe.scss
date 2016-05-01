@@ -1,0 +1,33 @@
+section.fringe-post-container {
+  background: url( '../images/Brick_BG.jpg');
+  background-repeat: repeat;
+  // background-size: cover;
+  min-height: 100vh;
+  padding-top: 100px;
+  .container {
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 1px 1px 5px #838383;
+    padding: 30px;
+    .row {
+      margin: 0 -15px;
+      .social {
+        width: 200px;
+        margin: 0 auto;
+      }
+      a {
+        button {
+          background: transparent;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          font-style: italic;
+          font-size: 16px;
+          &:hover {
+            color: $hover;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -9,21 +9,15 @@ section.home-container {
     margin: 0 -15px;
     .slideshow {
       img {
-        height: 100vh;
+        // height: 100vh;
         width: 100%;
-        margin: 0 auto;
-
+        margin: -6.45% auto;
+        @include mobile {
+          // margin: -6.45% auto;
+          object-fit: cover;
+          height: calc(100vh + 100px);
+        };
       }
     }
   }
-  // .socialbar {
-  //   background: #fff;
-  //   height: $social-height;
-  //   width: 100%;
-  //   img {
-  //     float: right;
-  //     position: relative;
-  //     top: 5px;
-  //   }
-  // }
 }

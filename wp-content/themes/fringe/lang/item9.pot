@@ -86,7 +86,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"This is a custom theme created by Item9 Creative. <a href=\"https://item9creative.com"
+"This theme is the bees knees. Created by Item9 Creative. <a href=\"https://item9creative.com"
 "\">Item9 Creative</a>"
 msgstr ""
 

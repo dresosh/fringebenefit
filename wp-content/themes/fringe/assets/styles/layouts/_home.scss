@@ -13,7 +13,6 @@ section.home-container {
         width: 100%;
         margin: -6.45% auto;
         @include mobile {
-          // margin: -6.45% auto;
           object-fit: cover;
           height: calc(100vh + 100px);
         };

@@ -3,7 +3,7 @@
  * Template Name: Found
  */
 ?>
-<section class="found-container animated bounceIn">
+<section class="found-container animated bounceInDown">
   <div class="container">
     <div class="row">
       <div class="col-md-12">

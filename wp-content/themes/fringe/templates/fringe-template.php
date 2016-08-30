@@ -30,7 +30,7 @@
 
               <?php foreach( $images as $image ): ?>
                 <div class="item">
-                  <a href="<?php the_permalink(); ?>">                    
+                  <a href="<?php the_permalink(); ?>">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </a>
                   <!-- <p><?php echo $image['caption']; ?></p> -->
@@ -49,7 +49,15 @@
         <br>
         <a href=<?php the_permalink(); ?>><button class="btn btn-default read-more" type="button" name="button">Read More</button></a>
         <div class="social">
-          <?php the_excerpt(); ?>
+          <br>
+          <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-icon-color="black" data-a2a-url="<?php the_permalink(); ?>" data-a2a-title="<?php the_title(); ?>">
+              <a class="a2a_button_facebook"></a>
+              <a class="a2a_button_twitter"></a>
+              <a class="a2a_button_linkedin"></a>
+              <a class="a2a_button_email"></a>
+              <a class="a2a_button_sms"></a>
+          </div>
+          <!-- <?php the_excerpt(); ?> -->
         </div>
         <hr>
       </div>

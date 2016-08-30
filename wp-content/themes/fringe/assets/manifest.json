@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "localhost/fringe"
+    "devUrl": "localhost/fringebenefit"
   }
 }

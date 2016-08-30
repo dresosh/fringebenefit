@@ -57,7 +57,6 @@
               <a class="a2a_button_email"></a>
               <a class="a2a_button_sms"></a>
           </div>
-          <!-- <?php the_excerpt(); ?> -->
         </div>
         <hr>
       </div>

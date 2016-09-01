@@ -53,7 +53,15 @@
         <?php endif ?>
 
       <div class="social">
-        <?php the_excerpt(); ?>
+        <br>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-icon-color="black" data-a2a-url="<?php the_permalink(); ?>" data-a2a-title="<?php the_title(); ?>">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_linkedin"></a>
+            <a class="a2a_button_email"></a>
+            <a class="a2a_button_sms"></a>
+        </div>
+        <br>
       </div>
       <a href="/blog"><button class="btn btn-default back-btn" type="button" name="button">Back</button></a>
 

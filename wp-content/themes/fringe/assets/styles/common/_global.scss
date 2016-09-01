@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 body {
   // padding-top: $nav-height;
@@ -74,7 +74,8 @@ nav.navbar {
       a {
         color: $black;
         &:hover {
-          font-weight: bold;
+          // font-weight: bold;
+          font-weight: 700;
         }
       }
     }
@@ -114,8 +115,12 @@ nav.navbar {
       margin-top: 0;
     };
     li {
+      width: 120px;
       text-transform: lowercase;
       color: red;
+      @include iphone {
+        width: auto;
+      };
       a {
         padding: 0 20px;
         @include iphone {
